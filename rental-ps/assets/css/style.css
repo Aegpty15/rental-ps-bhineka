@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-dark: #0f172a;
+    --card-dark: #1e293b;
+    --accent: #3b82f6;
+    --text-main: #f8fafc;  
+    --text-sub: #cbd5e1;   
+}
+
+body {
+    background-color: var(--bg-dark) !important;
+    color: var(--text-main) !important;
+    font-family: 'Outfit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { color: #fff !important; }
+p, span, small, div { color: var(--text-sub); }
+
+.text-muted {
+    color: #94a3b8 !important;
+}
+
+.sidebar-dark {
+    background: rgba(30, 41, 59, 0.95);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    height: 100vh;
+}
+.menu-link {
+    color: #94a3b8 !important;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.menu-link:hover, .menu-link.active {
+    background: var(--accent);
+    color: white !important;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+}
+
+.card {
+    background-color: var(--card-dark) !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.badge {
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.badge-console {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff !important;
+}
+
+.status-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    z-index: 10;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+.bg-danger { background-color: #ef4444 !important; }
+.bg-success { background-color: #10b981 !important; }
+
+.modal-content {
+    background-color: var(--card-dark);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+}
+.btn-close { filter: invert(1); }
